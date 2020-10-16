@@ -1,0 +1,61 @@
+
+
+<ion-content class="bg">
+
+  
+  <div class="select_lang ion-text-end">
+    <div>
+    <ion-select   [(ngModel)]="toppings" name="something" class="ion-padding select-full-width">
+          <ion-select-option value="">English</ion-select-option>
+          <ion-select-option value="hindi">Hindi</ion-select-option>
+          </ion-select>
+        </div>
+  </div>
+
+  <div class="page-msg">
+    <h2>Welcome</h2>
+    <p>We are delighted to have you <br> among us.</p>
+  </div>
+
+  <div class="login-logo">
+    <img src="assets/img/logo.png" alt="CARO">
+  </div>
+
+  <form #loginForm="ngForm" novalidate>
+    <ion-list class="login_col">
+      <ion-item>
+        <ion-select   [(ngModel)]="toppings" name="something" class="ion-padding select-full-width">
+          <ion-select-option value="">Select Country Code</ion-select-option>
+          <ion-select-option value="default">Bangladesh</ion-select-option>
+          <ion-select-option value="india">India</ion-select-option>
+          </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-input type="text" value="" placeholder="Enter Mobile Number"></ion-input>
+      </ion-item>
+    </ion-list>
+    <div class="ion-padding">
+      <ion-button (click)="onLogin(loginForm)" type="submit" expand="block">Submit</ion-button>
+    </div>
+  </form>
+
+
+  <ion-slides pager class="ion-margin">
+
+    <ion-slide>
+      <img src="assets/img/slide_01.png">
+    </ion-slide>
+  
+    <ion-slide>
+      <img src="assets/img/slide_02.png">
+    </ion-slide>
+  
+    <ion-slide>
+      <img src="assets/img/slide_03.png">
+    </ion-slide>
+  
+  </ion-slides>
+
+
+   
+</ion-content>

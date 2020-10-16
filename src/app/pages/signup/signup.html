@@ -1,0 +1,100 @@
+
+
+<ion-content>
+
+  <div class="login-logo">
+    <img src="assets/img/logo.png" alt="Alrededor">
+  </div>
+  <div class="page-msg">
+    <h2>Create an Account</h2>
+    <p>Please enter your details!</p>
+  </div>
+
+  <form #signupForm="ngForm" novalidate>
+    <ion-list lines="none">
+
+      <ion-item>
+        <ion-label position="stacked" color="primary">Full Name</ion-label>
+        <ion-input [(ngModel)]="signup.username" name="fullname" type="text" #username="ngModel"  required >
+        </ion-input>
+      </ion-item>
+
+      <ion-text color="danger">
+        <p [hidden]="username.valid || submitted == false" class="ion-padding-start">
+          Field is required
+        </p>
+      </ion-text>
+
+      <ion-item>
+        <ion-label position="stacked" color="primary">PAN number</ion-label>
+        <ion-input [(ngModel)]="signup.password" name="pannumber" type="text" #password="ngModel" required class="ion-padding">
+        </ion-input>
+      </ion-item>
+
+      <ion-text color="danger">
+        <p [hidden]="password.valid || submitted == false" class="ion-padding-start">
+          Field is required
+        </p>
+      </ion-text>
+
+      <ion-item>
+        <ion-label position="stacked" color="primary">Driving Licence Issue Date</ion-label>
+        <ion-input [(ngModel)]="signup.username" name="fullname" type="text" #username="ngModel"  required class="ion-padding">
+        </ion-input>
+      </ion-item>
+
+      <ion-text color="danger">
+        <p [hidden]="username.valid || submitted == false" class="ion-padding-start">
+          Field is required
+        </p>
+      </ion-text>
+
+      <ion-item>
+        <ion-label position="stacked" color="primary">Driving Licence Expiry Date</ion-label>
+        <ion-input [(ngModel)]="signup.username" name="Expiry" type="text" #username="ngModel"  required class="ion-padding">
+        </ion-input>
+      </ion-item>
+
+      <ion-text color="danger">
+        <p [hidden]="username.valid || submitted == false" class="ion-padding-start">
+          Field is required
+        </p>
+      </ion-text>
+
+      <ion-item>
+        <ion-label position="stacked" color="primary">Type of Vehicle</ion-label>
+        <ion-select interface="popover" value="Car" class="ion-padding">
+          <ion-select-option value="Car">Car</ion-select-option>
+          <ion-select-option value="Bike">Bike</ion-select-option>
+          <ion-select-option value="Other">Other</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+
+      <ion-text color="danger">
+        <p [hidden]="username.valid || submitted == false" class="ion-padding-start">
+          Field is required
+        </p>
+      </ion-text>
+
+     
+
+    </ion-list>
+
+    <div class="ion-padding">
+      <ion-button (click)="onSignup(signupForm)" type="submit" expand="block">Submit</ion-button>
+    </div>
+
+  </form>
+
+  
+
+  <div class="ion-text-center mT50" >
+    <span (click)="onLogin()" class="paz" tappable>
+      <ion-text color="yellow">
+        Already a memeber? <strong>Login</strong>
+      </ion-text>
+    </span>
+  </div>
+
+</ion-content>

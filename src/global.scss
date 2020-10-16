@@ -1,0 +1,47 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+/*
+ * App CSS
+ * ----------------------------------------------------------------------------
+ * Imports a file that can contain Sass/CSS that should be used throughout
+ * the entire app.
+ */
+
+@import "./app/app.scss";
+
+.page-msg {text-align: center; padding-bottom:20px;}
+.login-logo {text-align: center;}
+.select-full-width {max-width: 100% !important;width: 100% !important;padding-left:0px !important; padding-right:0 !important;}
+.login_col {border:1px solid #e3e3e3; border-radius:15px; padding:0px !important; margin:30px 20px 0px 20px !important;}
+ion-select, ion-input {font-weight:300; font-style: italic; color:#afafaf; font-size: 14px;}
+.page-msg p {font-weight:300; font-style: italic; color:#afafaf; font-size: 16px;}
+.select_lang {padding-right:20px; padding-top: 20px;}
+.select_lang div {display: inline-block; border: 1px solid #6e9177; border-radius:50px; padding:0px; margin:0px;}
+.select_lang .select-full-width {padding:6px 10px !important; font-style: normal; color:#658b6f; font-weight: 500;}
